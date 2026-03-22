@@ -1,75 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --page-bg: #F4F4F5;
+    --surface: #FFFFFF;
+    --surface-hover: #F4F4F5;
+    --text-primary: #09090B;
+    --text-secondary: #52525B;
+    --text-disabled: #A1A1AA;
+    --brand-primary: #09090B;
+    --brand-secondary: #E4E4E7;
+    --critical: #E11D48;
+    --warning: #F59E0B;
+    --safe: #10B981;
+    --clinical-blue: #2563EB;
+    --border-default: #E4E4E7;
+    --border-focus: #2563EB;
+}
+
 body {
     margin: 0;
-    font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--page-bg);
+    color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    color: var(--text-primary);
+}
+
+.font-heading {
+    font-family: 'Manrope', sans-serif;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
 }
 
 code {
-    font-family:
-        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 @layer base {
     :root {
-        --background: 0 0% 100%;
-        --foreground: 0 0% 3.9%;
+        --background: 240 5% 96%;
+        --foreground: 240 6% 4%;
         --card: 0 0% 100%;
-        --card-foreground: 0 0% 3.9%;
+        --card-foreground: 240 6% 4%;
         --popover: 0 0% 100%;
-        --popover-foreground: 0 0% 3.9%;
-        --primary: 0 0% 9%;
+        --popover-foreground: 240 6% 4%;
+        --primary: 240 6% 4%;
         --primary-foreground: 0 0% 98%;
-        --secondary: 0 0% 96.1%;
-        --secondary-foreground: 0 0% 9%;
-        --muted: 0 0% 96.1%;
-        --muted-foreground: 0 0% 45.1%;
-        --accent: 0 0% 96.1%;
-        --accent-foreground: 0 0% 9%;
-        --destructive: 0 84.2% 60.2%;
+        --secondary: 240 5% 90%;
+        --secondary-foreground: 240 6% 4%;
+        --muted: 240 5% 90%;
+        --muted-foreground: 240 4% 46%;
+        --accent: 240 5% 90%;
+        --accent-foreground: 240 6% 4%;
+        --destructive: 347 77% 50%;
         --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 89.8%;
-        --input: 0 0% 89.8%;
-        --ring: 0 0% 3.9%;
-        --chart-1: 12 76% 61%;
-        --chart-2: 173 58% 39%;
-        --chart-3: 197 37% 24%;
-        --chart-4: 43 74% 66%;
-        --chart-5: 27 87% 67%;
-        --radius: 0.5rem;
-    }
-    .dark {
-        --background: 0 0% 3.9%;
-        --foreground: 0 0% 98%;
-        --card: 0 0% 3.9%;
-        --card-foreground: 0 0% 98%;
-        --popover: 0 0% 3.9%;
-        --popover-foreground: 0 0% 98%;
-        --primary: 0 0% 98%;
-        --primary-foreground: 0 0% 9%;
-        --secondary: 0 0% 14.9%;
-        --secondary-foreground: 0 0% 98%;
-        --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 63.9%;
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 14.9%;
-        --input: 0 0% 14.9%;
-        --ring: 0 0% 83.1%;
-        --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
-        --chart-3: 30 80% 55%;
-        --chart-4: 280 65% 60%;
-        --chart-5: 340 75% 55%;
+        --border: 240 5% 90%;
+        --input: 240 5% 90%;
+        --ring: 217 91% 60%;
+        --chart-1: 347 77% 50%;
+        --chart-2: 38 92% 50%;
+        --chart-3: 160 84% 39%;
+        --chart-4: 217 91% 60%;
+        --chart-5: 240 6% 4%;
+        --radius: 0.25rem;
     }
 }
 
@@ -112,4 +119,152 @@ code {
         border-top-color: inherit;
         border-bottom-color: inherit;
     }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-default);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-disabled);
+}
+
+/* Labels */
+.label-text {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+/* Grid borders technique */
+.grid-border {
+    border: 1px solid var(--border-default);
+}
+
+.grid-border-r {
+    border-right: 1px solid var(--border-default);
+}
+
+.grid-border-b {
+    border-bottom: 1px solid var(--border-default);
+}
+
+/* Chart container styles */
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Transitions for specific properties only */
+.hover-lift {
+    transition: transform 200ms ease, background-color 200ms ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-1px);
+}
+
+/* Focus styles */
+.focus-ring:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--clinical-blue);
+}
+
+/* Status badges */
+.status-effective {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--safe);
+    border: 1px solid var(--safe);
+}
+
+.status-not-recommended {
+    background-color: rgba(225, 29, 72, 0.1);
+    color: var(--critical);
+    border: 1px solid var(--critical);
+}
+
+/* Risk level colors */
+.risk-low {
+    color: var(--safe);
+}
+
+.risk-medium {
+    color: var(--warning);
+}
+
+.risk-high {
+    color: var(--critical);
+}
+
+/* SHAP positive/negative */
+.shap-positive {
+    background-color: var(--clinical-blue);
+}
+
+.shap-negative {
+    background-color: var(--critical);
+}
+
+/* Dropzone styles */
+.dropzone {
+    border: 2px dashed var(--border-default);
+    transition: border-color 200ms ease, background-color 200ms ease;
+}
+
+.dropzone:hover,
+.dropzone-active {
+    border-color: var(--clinical-blue);
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+/* Data table styles */
+.data-table th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    padding: 12px 16px;
+    text-align: left;
+    background-color: var(--surface-hover);
+    border-bottom: 1px solid var(--border-default);
+}
+
+.data-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+    border-bottom: 1px solid var(--border-default);
+}
+
+.data-table tr:hover td {
+    background-color: var(--surface-hover);
+}
+
+/* Sidebar active state */
+.sidebar-item {
+    transition: background-color 200ms ease, color 200ms ease;
+}
+
+.sidebar-item:hover {
+    background-color: var(--surface-hover);
+    color: var(--text-primary);
+}
+
+.sidebar-item.active {
+    background-color: var(--brand-primary);
+    color: white;
 }
