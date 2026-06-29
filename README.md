@@ -1,5 +1,9 @@
 # 💫 About Me:
-# Hi there 👋, I'm Livesh<br><br>🎓 AI & Data Science Student<br><br>I'm passionate about building intelligent software by combining **Artificial Intelligence**, **Generative AI**, **Machine Learning**, **Deep Learning**, **Backend Development**, and **AR/VR** technologies. I enjoy solving real-world problems through scalable applications, AI-powered systems, and immersive experiences while continuously learning modern software engineering.<br><br>## 🚀 Currently Learning<br>- Backend Development with ASP.NET Core<br>- REST API Design & Development<br>- PostgreSQL & Entity Framework Core<br>- JWT Authentication & Security<br>- Machine Learning<br>- Deep Learning<br>- Generative AI & Large Language Models (LLMs)<br>- Computer Vision<br>- Unity + Backend Integration<br>- AWS Cloud Services<br>- Data Structures & Algorithms<br>- System Design<br><br>## 💻 Tech Stack<br><br>### Languages<br>- Python<br>- C#<br>- JavaScript<br>- SQL<br><br>### Backend<br>- ASP.NET Core<br>- REST APIs<br>- Entity Framework Core<br>- PostgreSQL<br>- Firebase<br><br>### AI & Data Science<br>- Artificial Intelligence<br>- Machine Learning<br>- Deep Learning<br>- Generative AI<br>- Large Language Models (LLMs)<br>- TensorFlow<br>- Scikit-learn<br>- OpenCV<br><br>### AR/VR<br>- Unity<br>- XR Development<br><br>### Cloud & Tools<br>- AWS<br>- Git & GitHub<br>- Docker (Learning)<br>- Postman<br><br>## 🌱 Areas of Interest<br>- Artificial Intelligence<br>- Generative AI<br>- Machine Learning<br>- Deep Learning<br>- Computer Vision<br>- Backend Engineering<br>- Cloud Computing<br>- AR/VR Development<br>- System Design<br><br>## 🎯 Career Goal<br>To become a Software Engineer specializing in AI, Generative AI, and scalable backend systems while building impactful products that solve real-world problems.<br><br>> **"Building intelligent systems, one project at a time."**
+👋 Hi, I'm Livesh
+
+🚀 AI | Generative AI | Machine Learning | Deep Learning | Backend Development | AR/VR
+
+Building intelligent applications and scalable software. Always learning, always building.
 
 
 ## 🌐 Socials:
